@@ -8,7 +8,8 @@ namespace Assi2
     {
         public FancyPost(string t, string b) : base(t, b) { }
 
-        public override string GetPrintableTitle() => "*** " + Title.ToUpper() + " ***";
-        public override string GetPrintableBody() => "~~~ " + Body + " ~~~";
+        public override string GetPrintableTitle() => "***" + Title.ToUpper() + "***\n------";
+        public override string GetPrintableBody() => "-=-=-=-=\n" + Body + "\n-=-=-=-=";
     }
+
 }
