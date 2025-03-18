@@ -1,10 +1,16 @@
 using System;
 
+/*
+ * Name: Logan McCallum Student Number: 1152955 Section: 2
+ * Name: Spencer Martin Student Number: 1040415 Section: 2
+ * Name: Ashley Burley-Denis Student Number: 0908968 Section: 1
+ */
+
 namespace Assi2
 {
 
     //PostProxy Class, Extends Content Class, Holds downloaded
-    //Posts In memory to be used by the program .
+    //Posts In memory to be used by the program.
     class PostProxy : Content
     {
         //PostProxy object variables
@@ -18,7 +24,6 @@ namespace Assi2
             _id = id;
         }
 
-
         //InitializePost method, creates a new post and
         //confirms that it is stored in memory.
         public void InitializePost()
@@ -30,12 +35,13 @@ namespace Assi2
             }
         }
 
-        //Download Method, 
+        //Download Method. 
         public void Download()
         {
             if (!_isDownloaded)
             {
-                _realPost = new FancyPost($"Post {_id}", "Downloaded Body");
+                _realPost = new FancyPost("Downloaded", "Downloaded Body");
+
                 _isDownloaded = true;
             }
         }

@@ -1,5 +1,11 @@
 using System;
 
+/*
+ * Name: Logan McCallum Student Number: 1152955 Section: 2
+ * Name: Spencer Martin Student Number: 1040415 Section: 2
+ * Name: Ashley Burley-Denis Student Number: 0908968 Section: 1
+ */
+
 namespace Assi2
 {
     //Post class, extends Content class, used for storing the post data.
@@ -26,7 +32,7 @@ namespace Assi2
 
         //Get methods, returns the Post's Title/Body,
         //formatting them into strings then returning them.
-        public override string GetPrintableTitle() => "***DOWNLOADED***------";
+        public override string GetPrintableTitle() => "***Downloaded***------";
         public override string GetPrintableBody() => "-=-=-=-=" + Body + "-=-=-=-=";
     }
 }
